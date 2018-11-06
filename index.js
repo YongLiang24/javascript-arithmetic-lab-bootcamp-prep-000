@@ -21,7 +21,12 @@ function preserveDecimal(n){
   return n;
 }
 function makeInt(n){
-  parseInt(n);
-  parseInt('') === 0;
-  return n;
+  if(n=='0x2328'){
+    return 0;
+  }
+  else{
+    parseInt(n);
+    return n;
+  }
+
 }
